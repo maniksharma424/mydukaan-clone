@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Archivo,sans-serif;
+}
+.header{
+    height: 377px;
+    width: 100%;
+    background-color: #146eb4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.first-nav{
+    width: 35%;
+    border: 1px solid black;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+
+
+}
+.first-nav :nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+}
+.first-nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+
+    
+}
+.second-nav{
+    width: 40%;
+    border:
+    1px solid black;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.second-nav a{
+    margin: 20px;
+}
+.second-nav :nth-child(1) button{
+    padding: 10px 5px 10px 5px ;
+    background: #146eb4;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+.second-nav :nth-child(2) button{
+    background-color: #ffffff;
+    padding: 20px 5px 20px 5px;
+    border: none;
+    font-size: 16px;
+    color: #146eb4;
+    border-radius: 5px;
+}
+.middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+
+    max-height: fit-content;
+    border: 1px solid rgb(234, 25, 25);
+}
+.list-container{
+    position: relative;
+    max-width: 1200px;
+    max-height: fit-content;
+    border: 1px solid rgb(176, 216, 0);
+    
+    bottom: 150px;
+    background-color: white;
+    
+
+}
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+.text p{
+    margin: 40px 0  0 35px;
+}
+.text :nth-child(1){
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.text :nth-child(2){
+    font-size: 20px;
+    font-weight: 100;
+    color: gray;
+}
+.list-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border: 2px solid crimson;
+    max-width: 1200px;
+    max-height: 840px ;
+    max-height: fit-content;
+
+    position: relative;
+    top: 70px;
+
+}
+.list-container ul li{
+    margin-bottom: 30px;
+    border: 1px solid black;
+    height: 294px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+
+}
+.img{
+    width: 100%;
+    height: 70%;
+
+    border-radius: 6px;
+
+}
+.img-text{
+    height: 30%;
+    border: 1px solid brown;
+}
+.img-text h3{
+    font-weight: 500;
+    margin-top: 19px;
+}
+.img-text p{
+    color: gray;
+    margin-top: 8px;
+}
+#img1{
+    background-image: url('https://mydukaan.io/images/tools/privacy-policy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img2{
+    background-image: url('https://mydukaan.io/images/tools/slogan-maker.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img3{
+    background-image: url('https://mydukaan.io/images/tools/terms-generator.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img4{
+    background-image: url('https://mydukaan.io/images/tools/invoice-generator.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img5{
+    background-image: url('https://mydukaan.io/images/tools/qr-code-generator.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img6{
+    background-image: url('https://mydukaan.io/images/tools/background-remover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img7{
+    background-image: url('https://mydukaan.io/images/tools/gst-calculator.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img8{
+    background-image: url('https://mydukaan.io/images/tools/product-description.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img9{
+    background-image: url('https://mydukaan.io/images/tools/enhancer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    max-height: 800px;
+    max-width: 100%;
+    background-color: #1a181e;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+
+    color: white;
+}
+.links{
+    width: 88%;
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    border: 1px solid red;
+
+}
+.box1,.box2,.box3,.box4,.box5{
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    align-items: flex-start;
+
+}
+.box1 a,.box2 a,.box3 a,.box4 a,.box5 a{
+    margin-bottom: 20px;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer-info{
+    width: 88%;
+    max-height: fit-content;
+    border-top: .5px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info p{
+    padding: 30px 0 30px 0;
+    color: whitesmoke;
+
+
+}
+
+@media screen and (max-width:413px) {
+    .header{
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+    }
+}
+
+
