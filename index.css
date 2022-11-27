@@ -7,17 +7,26 @@ body{
     font-family: Archivo,sans-serif;
 }
 .header{
-    height: 377px;
+    height: 100px;
     width: 100%;
     background-color: #146eb4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: sticky;
+    top: 0;
+
     
+}
+.color-filler{
+    width: 100%;
+    height: 257px;
+    background-color: #146eb4;
+
 }
 .first-nav{
     width: 35%;
-    border: 1px solid black;
+
     height: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -27,9 +36,9 @@ body{
 
 
 }
-.first-nav :nth-child(1){
-    font-size: 25px;
-    font-weight: bold;
+.first-nav :nth-child(1) img{
+   height: 100px;
+   width: 200px;
 }
 .first-nav a{
     text-decoration: none;
@@ -40,8 +49,7 @@ body{
 }
 .second-nav{
     width: 40%;
-    border:
-    1px solid black;
+
     height: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -74,16 +82,18 @@ body{
     width: 100%;
 
     max-height: fit-content;
-    border: 1px solid rgb(234, 25, 25);
+
 }
 .list-container{
     position: relative;
+
     max-width: 1200px;
     max-height: fit-content;
-    border: 1px solid rgb(176, 216, 0);
-    
+
+    box-shadow: -1px -1px 11px 0px rgba(128,128,128,1);
     bottom: 150px;
     background-color: white;
+    border-radius: 10px;
     
 
 }
@@ -92,7 +102,7 @@ body{
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: column;
-    border: 1px solid black;
+
 
 }
 .text p{
@@ -113,18 +123,18 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    border: 2px solid crimson;
+
     max-width: 1200px;
     max-height: 840px ;
     max-height: fit-content;
 
-    position: relative;
-    top: 70px;
+
+    margin-top: 70px;
 
 }
 .list-container ul li{
     margin-bottom: 30px;
-    border: 1px solid black;
+
     height: 294px;
     width: 360px;
     display: flex;
@@ -142,7 +152,7 @@ body{
 }
 .img-text{
     height: 30%;
-    border: 1px solid brown;
+
 }
 .img-text h3{
     font-weight: 500;
@@ -221,14 +231,19 @@ footer{
     color: white;
 }
 .links{
+    margin-top: 60px;
     width: 88%;
     max-height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    border: 1px solid red;
 
+
+}
+.icon h2 img{
+    width: 150px;
+    height: 50px;
 }
 .box1,.box2,.box3,.box4,.box5{
     display: flex;
@@ -247,7 +262,7 @@ a{
 .footer-info{
     width: 88%;
     max-height: fit-content;
-    border-top: .5px solid gray;
+    border-top: .5px solid #808080;
     display: flex;
     justify-content: space-between;
 }
@@ -257,13 +272,126 @@ a{
 
 
 }
+#india{
+    position: relative;
+    left: 10px;
+    top: 3px;
+}
+#m-hide{
+    display: none;
+}
 
 @media screen and (max-width:413px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .header{
+        height: 60px;
         justify-content: space-between;
         position: sticky;
         top: 0;
+
     }
+    .first-nav,.second-nav{
+        height: 50px;
+    }
+    .color-filler{
+        height: 150px;
+    }
+    .first-nav :nth-child(1) img{
+        width: 150px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .list-container{
+        margin-top: 50px;
+        position: inherit;
+        width: 360px;
+
+
+    }
+    #ul-el{
+        width: 330px;
+        margin-left: 15px;
+    }
+    #hide{
+        display: none;
+    }
+    #m-hide{
+        display: inline-block;
+    }
+    .option-btn{
+        color: white;
+        background-color: #3584c0fc;
+        border: none;
+        padding: 10px 10px 10px 10px;
+        margin-right: 10px;
+    }
+    .text :nth-child(1){
+        font-size: 25px;
+    }
+    .text :nth-child(2){
+        font-size: 20px;
+    }
+    footer{
+        margin-top: 50px;
+    height: 800px;
+    }
+    .links{
+        margin-top: 50px;
+        max-height: fit-content;
+        display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+   
+ 
+    }
+    .box1,.box2,.box3,.box4,.box5{
+        width: 170px;
+    }
+    .box4{
+        position: absolute;
+        top: 3950px;
+        left: 33px;
+
+
+    }
+    
+    .footer-info{
+
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    .footer-info p{
+
+        height: 30px;
+        font-size: 15px;
+
+    }
+    .footer-info :nth-child(1) img{
+    width: 150px;
+    height: 30px;
+   
+    }
+    #india{
+        position: relative;
+        left: 10px;
+        top: 3px;
+    }
+    .icon{
+        display: none;
+    }
+
+
+
 }
 
 
