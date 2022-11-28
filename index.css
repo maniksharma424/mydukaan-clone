@@ -38,11 +38,11 @@ body{
 .first-nav{
     
     width: 45%;
-    margin: 0 10px 0  0;
+    margin: 0 54px 0  0;
     height: 90px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 
     
@@ -51,11 +51,19 @@ body{
 }
 .first-nav :nth-child(1) img{
    height:44px;
-   width: 156px;
-   margin: 0 54px 0 0;
+   max-width: 156px;
+
+   
 }
-.first-nav a{
-    margin: 0 55px  0 0 ;
+.first-nav-2{
+    
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+
+}
+.first-nav-2 a{
+
     text-decoration: none;
     font-size: 18px;
     color: white;
@@ -63,8 +71,8 @@ body{
     
 }
 .second-nav{
-    width: 35%;
-
+    width: 31.75%;
+    
     height: 90px;
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +88,7 @@ padding: 0 32px  0 0;
     color: white;
     border: none;
     font-size: 18px;
+    
 }
 .second-nav :nth-child(2) button{
     background-color: #ffffff;
@@ -88,6 +97,8 @@ padding: 0 32px  0 0;
     font-size: 18px;
     color: #146eb4;
     border-radius: 4px;
+    
+
 }
 .middle{
     display: flex;
@@ -325,7 +336,7 @@ a{
     }
     .first-nav :nth-child(1) img{
         width: 128px;
-        height: 36px;
+        height: 44px;
         margin-left: 30px;
         margin-top: 5px;
     }
