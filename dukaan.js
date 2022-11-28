@@ -14,7 +14,7 @@ window.onscroll = () => {
     <div class="second-nav">
         <a id="hide" href=""><button id='black-color'>Sign in</button></a>
         <a id="hide" href=""><button id='blue-color'>Start free trail</button></a>
-        <button class="option-btn-2" id="m-hide"><i class="fa-solid fa-grip-lines fa-xl"></i></button>
+        <button class="option-btn-2" id="m-hide"><i class="fa-solid fa-grip-lines fa-2xl"></i></button>
     </div>`
     }
     if (window.scrollY < 257) {
@@ -31,7 +31,7 @@ window.onscroll = () => {
     <div class="second-nav">
         <a id="hide" href=""><button>Sign in</button></a>
         <a id="hide" href=""><button>Start free trail</button></a>
-        <button class="option-btn" id="m-hide"><i class="fa-solid fa-grip-lines fa-xl"></i></button>
+        <button class="option-btn" id="m-hide"><i class="fa-solid fa-grip-lines fa-2xl"></i></button>
     </div>`
     } else {
         return;
