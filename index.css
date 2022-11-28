@@ -6,8 +6,19 @@
 body{
     font-family: Archivo,sans-serif;
 }
+#black-color{
+    color: black;
+    background-color: white;
+}
+#blue-color{
+    color: white;
+    background-color: #146eb4;
+}
 .header{
-    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 90px;
     width: 100%;
     background-color: #146eb4;
     display: flex;
@@ -25,54 +36,58 @@ body{
 
 }
 .first-nav{
-    width: 35%;
-
-    height: 100px;
+    
+    width: 45%;
+    margin: 0 10px 0  0;
+    height: 90px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+
     
 
 
 }
 .first-nav :nth-child(1) img{
-   height: 100px;
-   width: 200px;
+   height:44px;
+   width: 156px;
+   margin: 0 54px 0 0;
 }
 .first-nav a{
+    margin: 0 55px  0 0 ;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 
     
 }
 .second-nav{
-    width: 40%;
+    width: 35%;
 
-    height: 100px;
+    height: 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
 }
-.second-nav a{
-    margin: 20px;
+.second-nav :nth-child(1){
+padding: 0 32px  0 0;
 }
 .second-nav :nth-child(1) button{
     padding: 10px 5px 10px 5px ;
     background: #146eb4;
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 .second-nav :nth-child(2) button{
     background-color: #ffffff;
-    padding: 20px 5px 20px 5px;
+    padding: 12px 24px;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     color: #146eb4;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .middle{
     display: flex;
@@ -87,14 +102,14 @@ body{
 .list-container{
     position: relative;
 
-    max-width: 1200px;
+    max-width: 1186px;
     max-height: fit-content;
 
-    box-shadow: -1px -1px 11px 0px rgba(128,128,128,1);
-    bottom: 150px;
+    box-shadow: 0 2px 8px 0 rgb(26 24 30 / 6%);
+    bottom: 115px;
     background-color: white;
-    border-radius: 10px;
-    
+    border-radius: 8px;
+    padding: 36px;
 
 }
 .text{
@@ -105,37 +120,40 @@ body{
 
 
 }
-.text p{
-    margin: 40px 0  0 35px;
-}
+
 .text :nth-child(1){
+    margin: 0px 0 16px 15px;
     font-size: 35px;
     font-weight: 600;
 
 }
 .text :nth-child(2){
+    margin: 0 0 32px 15px;
     font-size: 20px;
     font-weight: 100;
-    color: gray;
+    
+    color: #4d4d4d
 }
 .list-container ul {
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+   
 
 
-    max-width: 1200px;
+    max-width: 1090px;
     max-height: 840px ;
     max-height: fit-content;
 
 
-    margin-top: 70px;
+
 
 }
 .list-container ul li{
-    margin-bottom: 30px;
 
-    height: 294px;
+    padding: 16px;
+
+    height: 333px;
     width: 360px;
     display: flex;
     flex-wrap: wrap;
@@ -144,8 +162,8 @@ body{
 
 }
 .img{
-    width: 100%;
-    height: 70%;
+   width: 328px;
+    height: 200px;
 
     border-radius: 6px;
 
@@ -156,11 +174,13 @@ body{
 }
 .img-text h3{
     font-weight: 500;
-    margin-top: 19px;
+    margin-top: 20px;
 }
 .img-text p{
-    color: gray;
+    
+    color: #4d4d4d;
     margin-top: 8px;
+    font-size: 16px;
 }
 #img1{
     background-image: url('https://mydukaan.io/images/tools/privacy-policy.jpg');
@@ -232,7 +252,7 @@ footer{
 }
 .links{
     margin-top: 60px;
-    width: 88%;
+    width: 90%;
     max-height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -242,8 +262,8 @@ footer{
 
 }
 .icon h2 img{
-    width: 150px;
-    height: 50px;
+    width: 156px;
+    height: 44px;
 }
 .box1,.box2,.box3,.box4,.box5{
     display: flex;
@@ -260,7 +280,7 @@ a{
     text-decoration: none;
 }
 .footer-info{
-    width: 88%;
+    width: 82%;
     max-height: fit-content;
     border-top: .5px solid #808080;
     display: flex;
@@ -294,6 +314,9 @@ a{
         top: 0;
 
     }
+    #black-color{
+        display: none;
+    }
     .first-nav,.second-nav{
         height: 50px;
     }
@@ -310,12 +333,17 @@ a{
         margin-top: 50px;
         position: inherit;
         width: 360px;
+        padding: 0;
 
 
     }
+    .img{
+        width: 332px;
+        height: 200px;
+    }
     #ul-el{
         width: 330px;
-        margin-left: 15px;
+
     }
     #hide{
         display: none;
@@ -325,10 +353,13 @@ a{
     }
     .option-btn{
         color: white;
-        background-color: #3584c0fc;
+        background-color: #146eb4;
         border: none;
-        padding: 10px 10px 10px 10px;
-        margin-right: 10px;
+    }
+    .option-btn-2{
+        background-color: white;
+        color: #146eb4;
+        border: none;
     }
     .text :nth-child(1){
         font-size: 25px;
@@ -354,7 +385,7 @@ a{
     }
     .box4{
         position: absolute;
-        top: 3950px;
+        top: 3910px;
         left: 26px;
 
 
