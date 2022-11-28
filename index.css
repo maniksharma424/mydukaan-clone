@@ -404,7 +404,7 @@ a{
     .footer-info p{
 
         height: 30px;
-        font-size: 15px;
+        font-size: 14px;
 
     }
     .footer-info :nth-child(1) img{
@@ -419,6 +419,10 @@ a{
     }
     .icon{
         display: none;
+    }
+    #i{
+        width: 156px;
+        height: 44px;
     }
 
 
